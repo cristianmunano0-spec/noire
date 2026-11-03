@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+    --black: #090909;
+    --gold: #c9a45c;
+    --white: #f5f1e9;
+    --gray: #a6a19a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    border-bottom: 1px solid #25221d;
+    background: #090909;
+}
+
+.logo {
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a, .instagram {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+
+nav a:hover, .instagram:hover {
+    color: var(--gold);
+}
+
+.instagram {
+    border: 1px solid var(--gold);
+    padding: 12px 18px;
+}
+
+.hero {
+    min-height: 690px;
+    display: flex;
+    align-items: center;
+    padding: 80px 12%;
+    background:
+      linear-gradient(90deg, #090909 5%, rgba(9,9,9,.88) 45%, rgba(9,9,9,.2)),
+      url('https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1800')
+      center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(65px, 9vw, 115px);
+    font-weight: 400;
+    line-height: .95;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: var(--gold);
+}
+
+.description {
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 38px;
+}
+
+.gold-button {
+    display: inline-block;
+    padding: 17px 30px;
+    background: var(--gold);
+    color: #090909;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.gold-button:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+}
+
+.collection {
+    padding: 110px 8%;
+    text-align: center;
+}
+
+.collection h2, .about h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.coming-soon {
+    color: var(--gray);
+    margin-top: 35px;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.about {
+    text-align: center;
+    padding: 90px 20px;
+    background: #11100e;
+}
+
+.about p {
+    margin-top: 20px;
+    color: var(--gray);
+    font-size: 12px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 8%;
+    color: var(--gray);
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        padding: 0 5%;
+        height: 75px;
+    }
+
+    .logo {
+        font-size: 29px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .instagram {
+        font-size: 8px;
+        padding: 10px;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding: 60px 7%;
+    }
+
+    .collection h2, .about h2 {
+        font-size: 35px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 950px;
+    margin: 60px auto 0;
+}
+
+.product-card {
+    text-align: left;
+    background: #11100e;
+    border: 1px solid #29241c;
+    transition: transform .3s, border-color .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+}
+
+.product-image {
+    height: 350px;
+    overflow: hidden;
+    background: #17130e;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coming-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    letter-spacing: 8px;
+}
+
+.product-info {
+    padding: 25px;
+}
+
+.product-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.product-info p {
+    color: var(--gray);
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    margin: 12px 0 22px;
+    line-height: 1.8;
+}
+
+.product-button {
+    display: inline-block;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.product-button:hover {
+    background: var(--gold);
+    color: var(--black);
+}
+
+.coming-label {
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+}
+
+.product-price {
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.season-label {
+    color: var(--gray);
+    font-size: 10px;
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
