@@ -302,3 +302,128 @@ footer {
     letter-spacing: 2px;
     margin-top: 20px;
 }
+.product-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.product-link h3 {
+    transition: color 0.3s ease;
+}
+
+.product-link:hover h3 {
+    color: var(--gold);
+}
+
+/* NOIRÉ PRODUCT DETAIL PAGE */
+
+.product-detail {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 60px 7%;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+    transition: opacity 0.3s;
+}
+
+.back-link:hover {
+    opacity: 0.65;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.detail-image {
+    background: #17130e;
+    border: 1px solid #29241c;
+    padding: 30px;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.detail-info h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+
+.detail-info > p:not(.eyebrow) {
+    color: var(--gray);
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+.detail-description {
+    border-top: 1px solid #29241c;
+    margin: 35px 0;
+    padding-top: 25px;
+}
+
+.detail-description h3 {
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.detail-description p {
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 2.3;
+}
+
+@media (max-width: 700px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .detail-image {
+        min-height: 320px;
+    }
+
+    .detail-info h1 {
+        font-size: 36px;
+    }
+}
+.product-card-link {
+    min-height: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.product-card-link .product-info {
+    flex: 1;
+}.product-card-link,
+.product-card-link:visited,
+.product-card-link:hover,
+.product-card-link:active {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
