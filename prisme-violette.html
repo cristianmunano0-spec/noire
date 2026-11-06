@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +8,78 @@
     <title>PRISMÉ VIOLETTE | NOIRÉ</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .fragrance-profile,
+        .reviews-section {
+            max-width: 1000px;
+            margin: 65px auto;
+            padding: 35px 25px;
+            text-align: center;
+            border-top: 1px solid rgba(201,164,92,.35);
+        }
+
+        .detail-image img {
+            width: 100%;
+            height: 550px;
+            object-fit: contain;
+            object-position: center;
+            transform: scale(1.25);
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .profile-item {
+            padding: 25px 15px;
+            border: 1px solid rgba(201,164,92,.3);
+        }
+
+        .profile-item h3 {
+            color: #c9a45c;
+            margin-bottom: 15px;
+        }
+
+        .profile-item p {
+            line-height: 1.8;
+        }
+
+        .reviews-section h2,
+        .fragrance-profile h2 {
+            margin-bottom: 15px;
+        }
+
+        .review-empty {
+            padding: 30px 15px;
+            margin: 25px 0;
+            border: 1px solid rgba(201,164,92,.3);
+        }
+
+        .review-empty p {
+            color: #c9a45c;
+        }
+
+        .review-empty span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .usage-info {
+            margin-top: 35px;
+            line-height: 2;
+        }
+
+        @media (max-width: 600px) {
+            .detail-image img {
+                height: 400px;
+                transform: scale(1.1);
+            }
+        }
+    </style>
 </head>
 
 <body class="product-page">
@@ -36,7 +108,7 @@
             <div class="detail-image">
                 <img
                     src="https://patekmaison.com/cdn/shop/files/Violette.png?v=1772462823"
-                    alt="Prismé Violette">
+                    alt="Prismé Violette by Patek Maison">
             </div>
 
             <div class="detail-info">
@@ -54,111 +126,135 @@
                 </span>
 
                 <div class="detail-description">
+
                     <h3>PRODUCT DETAILS</h3>
+
                     <p>
-                        Fragrance: Eau de Parfum<br>
+                        Brand: Patek Maison<br>
+                        Fragrance: Prismé Violette<br>
+                        Concentration: Eau de Parfum<br>
                         Size: 90 ML / 3.0 FL OZ<br>
                         Condition: Sealed<br>
                         Availability: In Stock
                     </p>
+
                 </div>
 
                 <a
                     href="https://www.instagram.com/noire.resells/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     class="product-button">
                     INQUIRE ON INSTAGRAM
                 </a>
 
             </div>
-
         </div>
 
-        <section class="detail-description">
-            <h3>FRAGRANCE PROFILE</h3>
+        <section class="fragrance-profile">
+
+            <p class="eyebrow">DISCOVER THE SCENT</p>
+
+            <h2>FRAGRANCE PROFILE</h2>
+
             <p>
-                A fruity and floral fragrance with a smooth sweetness.
-                Juicy fruits blend with elegant white florals and honey,
-                finishing with creamy coconut and warm woody notes.
+                A graceful blend of juicy fruits, delicate florals,
+                sweet honey, and creamy warm notes.
             </p>
-            <p>
-                Scent Character: Fruity · Floral · Sweet · Creamy
-            </p>
+
+            <div class="profile-grid">
+
+                <div class="profile-item">
+                    <h3>TOP NOTES</h3>
+                    <p>Pear</p>
+                    <p>Mandarin</p>
+                    <p>Melon</p>
+                    <p>Gardenia</p>
+                </div>
+
+                <div class="profile-item">
+                    <h3>HEART NOTES</h3>
+                    <p>Jasmine Sambac</p>
+                    <p>Honey</p>
+                    <p>White Ginger Lily</p>
+                </div>
+
+                <div class="profile-item">
+                    <h3>BASE NOTES</h3>
+                    <p>Coconut Milk</p>
+                    <p>Tonka Bean</p>
+                    <p>Driftwood</p>
+                </div>
+
+            </div>
+
+            <div class="usage-info">
+
+                <h3>WHEN TO WEAR</h3>
+
+                <p>
+                    Recommended Seasons: Spring &amp; Summer<br>
+                    Best Time: Daytime &amp; Afternoon<br>
+                    Occasions: Everyday Wear, Casual Outings &amp; Special Occasions
+                </p>
+
+                <h3>SCENT CHARACTER</h3>
+
+                <p>
+                    Fruity · Floral · Creamy · Sweet · Elegant
+                </p>
+
+                <p>
+                    Bright fruity notes meet soft floral accords,
+                    followed by a smooth, creamy and subtly sweet finish.
+                </p>
+
+            </div>
+
         </section>
 
-        <section class="detail-description">
-            <h3>FRAGRANCE NOTES</h3>
+        <section class="reviews-section">
 
-            <h4>TOP NOTES</h4>
-            <p>
-                Pear, Mandarin Orange, Melon and Gardenia
-            </p>
+            <p class="eyebrow">CUSTOMER EXPERIENCE</p>
 
-            <h4>HEART NOTES</h4>
+            <h2>CLIENT REVIEWS</h2>
+
             <p>
-                Jasmine Sambac, Honey and White Ginger Lily
+                Discover what our customers think about
+                Prismé Violette.
             </p>
 
-            <h4>BASE NOTES</h4>
-            <p>
-                Coconut Milk, Tonka Bean and Driftwood
-            </p>
-        </section>
+            <div class="review-empty">
 
-        <section class="detail-description">
-            <h3>RECOMMENDED SEASONS</h3>
-            <p>
-                Spring and Summer
-            </p>
-            <p>
-                Its fruity, floral and creamy character makes it a
-                lovely choice for warmer weather.
-            </p>
-        </section>
+                <p>★★★★★</p>
 
-        <section class="detail-description">
-            <h3>WHEN TO WEAR</h3>
-            <p>
-                Best suited for daytime wear, casual outings,
-                daytime events and warm-weather occasions.
-            </p>
-            <p>
-                A great option for anyone who enjoys sweet,
-                fruity and floral fragrances.
-            </p>
-        </section>
+                <strong>YOUR EXPERIENCE MATTERS</strong>
 
-        <section class="detail-description">
-            <h3>CUSTOMER REVIEWS</h3>
-            <p>
-                Customer reviews coming soon.
-            </p>
-        </section>
+                <span>
+                    Customer reviews coming soon.
+                </span>
 
-        <section class="detail-description">
-            <h3>SHARE YOUR EXPERIENCE</h3>
-            <p>
-                Purchased this fragrance from NOIRÉ?
-                Share your experience with us.
-            </p>
+            </div>
 
             <a
                 href="https://www.instagram.com/noire.resells/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 class="product-button">
                 WRITE A REVIEW
             </a>
+
         </section>
 
     </main>
 
     <footer>
+
         <p>© 2026 NOIRÉ. ALL RIGHTS RESERVED.</p>
+
         <p>LUXURY FRAGRANCE HOUSE</p>
+
     </footer>
 
 </body>
 </html>
-```
